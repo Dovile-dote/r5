@@ -219,8 +219,20 @@ function App() {
             value={color1}
             onChange={inputColor1}
           ></input>
-          <input type="range" value={width} onChange={inputWidth}></input>
-          <input type="range" value={height} onChange={inputHeight}></input>
+          <input
+            type="range"
+            min="0"
+            max="1000"
+            value={width}
+            onChange={inputWidth}
+          ></input>
+          <input
+            type="range"
+            min="0"
+            max="1000"
+            value={height}
+            onChange={inputHeight}
+          ></input>
           <div className="flex">
             {kv.map((_, i) => (
               <div
